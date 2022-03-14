@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zipper</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/trimsstyle.css">
+</head>
+
+<body>
+    <div class="BasicInfoPage">
+        <!--=============================== header ===============================-->
+        <div class="header flex">
+            <div class="logo">
+                <img src="../images/logo.png" alt="" />
+            </div>
+            <div class="headerIcons flex">
+                <a href="#" class="HeaderIcon headerBell">
+                    <svg viewBox="0 0 32 32" class="icon shapeCodepen headerBellIcon">
+                        <use xlink:href="../SVG/sprite.svg#icon-bell-o"></use>
+                    </svg>
+                </a>
+                <a href="#" class="HeaderIcon HeaderUser">
+                    <svg viewBox="0 0 32 32" class="icon shapeCodepen headerUserIcon">
+                        <use xlink:href="../SVG/sprite.svg#user-icon"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <!-- =======================side baer and basic info section ======================= -->
+        <div class="mainContentSection flex">
+            <!-- ========================side bar section ======================== -->
+            <div class="mainLeft">
+                <ul class="sidebarMenu robotoReguler">
+                    <li class="SidemenuItem upperCase">
+                        <a href="#">Fabric</a>
+                    </li>
+                    <li class="SidemenuItem upperCase"><a href="#">Inventory</a></li>
+                    <li class="SidemenuItem activateSidbarMenu upperCase activeMenuItem">
+                        <a href="#">Trims</a>
+                        <span class="sideBarArrowIcon">
+                            <svg viewBox="0 0 32 32" class="icon shapeCodepen sideBarIcon headerUserIcon">
+                                <use xlink:href="../SVG/sprite.svg#icon-arrow-right"></use>
+                            </svg>
+                        </span>
+                        <ul class="sideBarSubMenu">
+                            <li class="sidbarSbMenu upperCase"><a class="sidebarmenulink" href="#">Buttons</a></li>
+                            <li class="sidbarSbMenu upperCase"><a class="sidebarmenulink" href="#">BEADS</a></li>
+                            <li class="sidbarSbMenu upperCase"><a class="sidebarmenulink" href="#">CUT DANA</a></li>
+                            <li class="sidbarSbMenu upperCase"><a class="sidebarmenulink" href="#">STONES</a></li>
+                            <li class="sidbarSbMenu upperCase"><a class="sidebarmenulink" href="#">CHAINS</a></li>
+                            <li class="sidbarSbMenu upperCase"><a class="sidebarmenulink" href="#">HOOK</a></li>
+                            <li class="sidbarSbMenu upperCase"><a class="sidebarmenulink" href="#">elastic</a></li>
+                            <li class="sidbarSbMenu upperCase"><a class="sidebarmenulink blueBtn" href="#">Zipper</a>
+                            </li>
+                            <li class="sidbarSbMenu upperCase"><a class="sidebarmenulink" href="#">interlining
+                                    (fusing)</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="mainRight">
+                <div class="flex tabViewBtns robotoReguler">
+                    <p class="robotoMedium upperCase pageTitle">Zipper</p>
+                    <button class="btn upperCase tabViewBtn blueBtn upperCase">basic Info</button>
+                    <button class="btn upperCase tabViewBtn whiteBack">Inventory Details</button>
+                    <button class="btn upperCase tabViewBtn whiteBack">Vendor Details</button>
+                </div>
+                <!-- ===================information=================== -->
+                <form action="">
+                    <div class="mainBasicInfoSection">
+                        <div class="information BeadsPage section">
+                            <p class="heading robotoMedium upperCase">Information</p>
+                            <div class="flex mainInfoInputS mainZipperInfo robotoReguler">
+                                <div
+                                    class="BeadInfoTitleInput1 ZipperTitleInput1 ZipperTitleInput mb-2 upperCase justifyspacebtwn flex">
+                                    <label for=""
+                                        class="BeadInfoTitle1  robotoMedium labelTitle inputtitlePAding">Code</label>
+                                    <div class="requiredmsg BeadInfoinput1">
+                                        <input type="text" class="infoInputTxt upperCase BeadInfoinput"
+                                            placeholder="1256" />
+                                        <!-- <p class="errorMsg">this is demo</p> -->
+                                    </div>
+                                </div>
+                                <div
+                                    class="BeadInfoTitleInput2 ZipperTitleInput2 ZipperTitleInput  mb-2 upperCase justifyspacebtwn flex">
+                                    <label for=""
+                                        class="BeadInfoTitle2  robotoMedium labelTitle inputtitlePAding">Color</label>
+                                    <div class="requiredmsg BeadInfoinput2">
+                                        <input type="text" class="infoInputTxt upperCase BeadInfoinput"
+                                            placeholder="Black" />
+                                        <!-- <p class="errorMsg">this is demo</p> -->
+                                    </div>
+                                </div>
+                                <div class="BeadInfoTitleInput3 ZipperTitleInput3 mb-2 upperCase justifyspacebtwn flex">
+                                    <label for=""
+                                        class="BeadInfoTitle3  robotoMedium labelTitle inputtitlePAding">Vendor</label>
+                                    <div class="requiredmsg BeadInfoinput3">
+                                        <input type="text" class="infoInputTxt upperCase BeadInfoinput"
+                                            placeholder="XYZ" />
+                                        <!-- <p class="errorMsg">this is demo</p> -->
+                                    </div>
+                                </div>
+                                <div
+                                    class="BeadInfoTitleInput4 ZipperTitleInput4 ZipperTitleInput mb-2 upperCase justifyspacebtwn flex">
+                                    <label for=""
+                                        class="BeadInfoTitle4  robotoMedium  labelTitle inputtitlePAding">Total
+                                        Qty</label>
+                                    <div class="BeadInfoinput4  requiredmsg flex">
+                                        <input type="number"
+                                            class="infoInputTxt upperCase BeadInfoinput BeadInfoinputtxt"
+                                            placeholder="511" min="1" />
+                                        <select name="Qty unit" class="infoInputTxt sizeqtySelect upperCase">
+                                            <option value="" class="ttlqtyoption">MG</option>
+                                            <option value="" class="ttlqtyoption">GM</option>
+                                            <option value="" class="ttlqtyoption">KG</option>
+                                        </select>
+                                        <!-- <p class="errorMsg">this is demo</p> -->
+                                    </div>
+                                </div>
+                                <div
+                                    class="BeadInfoTitleInput5 ZipperTitleInput5 ZipperTitleInput mb-2 upperCase justifyspacebtwn flex">
+                                    <label for=""
+                                        class="BeadInfoTitle4  robotoMedium  labelTitle inputtitlePAding">Size</label>
+                                    <div class="BeadInfoinput5 requiredmsg flex">
+                                        <input type="number"
+                                            class="infoInputTxt upperCase BeadInfoinput BeadInfoinputtxt"
+                                            placeholder="16" min="1" />
+                                        <select name="Qty unit" class="infoInputTxt sizeqtySelect upperCase">
+                                            <option value="" class="ttlqtyoption">In</option>
+                                            <option value="" class="ttlqtyoption">Ft</option>
+                                            <option value="" class="ttlqtyoption">M</option>
+                                        </select>
+                                        <!-- <p class="errorMsg">this is demo</p> -->
+                                    </div>
+                                </div>
+                                <div class="ZipperTitleInput6 ZipperTitleInput mb-2 upperCase justifyspacebtwn flex">
+                                    <label for="" class="infoInputLabel8 robotoMedium  labelTitle inputtitlePAding">Zip
+                                        Type</label>
+                                    <div class="ZipperInfoinput6 requiredmsg flex">
+                                        <input type="text" class="infoInputTxt BeadInfoinput upperCase"
+                                            placeholder="concealed / 2way / pant zip" />
+                                        <!-- <p class="errorMsg">this is demo</p> -->
+                                    </div>
+                                </div>
+                                <div class="ZipperTitleInput7 mb-2 upperCase justifyspacebtwn flex">
+                                    <label for="" class="infoInputLabel8 robotoMedium  labelTitle inputtitlePAding">Tape
+                                        TYpe</label>
+                                    <div class="ZipperInfoinput7 requiredmsg flex">
+                                        <input type="text" class="infoInputTxt BeadInfoinput upperCase"
+                                            placeholder="Woven / Knitted" />
+                                        <!-- <p class="errorMsg">this is demo</p> -->
+                                    </div>
+                                </div>
+                                <div class="ZipperTitleInput8 ZipperTitleInput mb-2 upperCase justifyspacebtwn flex">
+                                    <label for=""
+                                        class="BeadInfoTitle4  robotoMedium  labelTitle inputtitlePAding">Pattern</label>
+                                    <div class="ZipperInfoinput8 requiredmsg flex">
+                                        <input type="text" class="infoInputTxt upperCase BeadInfoinput"
+                                            placeholder="printed / solid / Fancy" />
+                                        <!-- <p class="errorMsg">this is demo</p> -->
+                                    </div>
+                                </div>
+                                <div class="ZipperTitleInput9 ZipperTitleInput mb-2 upperCase justifyspacebtwn flex">
+                                    <label for="" class="BeadInfoTitle4  robotoMedium  labelTitle inputtitlePAding">Lock
+                                        Type</label>
+                                    <div class="ZipperInfoinput9 requiredmsg flex">
+                                        <input type="text" class="infoInputTxt upperCase BeadInfoinput"
+                                            placeholder="semi / automatic" />
+                                        <!-- <p class="errorMsg">this is demo</p> -->
+                                    </div>
+                                </div>
+                                <div class="ZipperTitleInput10  mb-2 upperCase justifyspacebtwn flex">
+                                    <label for="" class="infoInputLabel8 robotoMedium  labelTitle inputtitlePAding">Zip
+                                        End</label>
+                                    <div class="ZipperInfoinput10 requiredmsg flex">
+                                        <input type="text" class="infoInputTxt BeadInfoinput upperCase"
+                                            placeholder="open end / close end" />
+                                        <!-- <p class="errorMsg">this is demo</p> -->
+                                    </div>
+                                </div>
+                                <div class="ZipperTitleInput11 ZipperTitleInput mb-2 upperCase justifyspacebtwn flex">
+                                    <label for=""
+                                        class="infoInputLabel8 robotoMedium  labelTitle inputtitlePAding">Teeth
+                                        material</label>
+                                    <div class="ZipperInfoinput11 requiredmsg flex">
+                                        <input type="text" class="infoInputTxt BeadInfoinput upperCase"
+                                            placeholder="metal / plastic" />
+                                        <!-- <p class="errorMsg">this is demo</p> -->
+                                    </div>
+                                </div>
+                                <div class="ZipperTitleInput12 ZipperTitleInput mb-2 upperCase justifyspacebtwn flex">
+                                    <label for=""
+                                        class="infoInputLabel8 robotoMedium  labelTitle inputtitlePAding">slider
+                                        material</label>
+                                    <div class="ZipperInfoinput12 requiredmsg flex">
+                                        <input type="text" class="infoInputTxt BeadInfoinput upperCase"
+                                            placeholder="metal / plastic" />
+                                        <!-- <p class="errorMsg">this is demo</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="defects BeadsPage section">
+                            <p class="heading robotoMedium upperCase">Defetcs</p>
+                            <div class="flex mainInfoInputS robotoReguler">
+                                <div class="defectsTitleInput1 mb-1 upperCase justifyspacebtwn flex">
+                                    <label for="" class="BeadInfoTitle1 robotoMedium labelTitle inputtitlePAding">Defect
+                                        Type</label>
+                                    <div class="requiredmsg defectsinput1">
+                                        <input type="text" class="infoInputTxt upperCase BeadInfoinput"
+                                            placeholder="Small Hole" />
+                                        <!-- <p class="errorMsg">this is demo</p> -->
+                                    </div>
+                                </div>
+                                <div class="defectsTitleInput2 mb-1 upperCase justifyspacebtwn flex">
+                                    <label for="" class="BeadInfoTitle2 robotoMedium labelTitle inputtitlePAding">Defect
+                                        Qty</label>
+                                    <div class="requiredmsg defectsinput2">
+                                        <input type="text" class="infoInputTxt upperCase BeadInfoinput"
+                                            placeholder="1 Meter" />
+                                        <!-- <p class="errorMsg">this is demo</p> -->
+                                    </div>
+                                </div>
+                                <div class="defectsTitleInput3 mb-1 upperCase justifyspacebtwn flex">
+                                    <label for="" class="BeadInfoTitle3 robotoMedium labelTitle inputtitlePAding">Defect
+                                        Remarks</label>
+                                    <div class="requiredmsg defectsinput3">
+                                        <textarea type="text"
+                                            class="infoInputTxt upperCase BeadInfotxtarea BeadInfoinput">Lorem Ipsum Defect Remarks Lorem ...</textarea>
+                                        <!-- <p class="errorMsg">this is demo</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section flex">
+                            <div class="colorBleed colorBleedSection">
+                                <p class="heading robotoMedium upperCase">Color Bleed</p>
+                                <div class="flex mainInfoInputS robotoReguler">
+                                    <div class="maininfoInput12 alignsart justifyspacebtwn upperCase flex">
+                                        <label for=""
+                                            class="infoInputLabel1 robotoMedium labelTitle inputtitlePAding">With
+                                            Water</label>
+                                        <div class="YEsNoBtns flex">
+                                            <button class="btn bleedBtn shirnkageBtn">Yes</button>
+                                            <button class="btn bleedBtn shirnkageBtn activeBlueBtn">No</button>
+                                        </div>
+                                    </div>
+                                    <div class="maininfoInput13 alignsart justifyspacebtwn upperCase flex">
+                                        <label for=""
+                                            class="infoInputLabel1 robotoMedium labelTitle inputtitlePAding">With
+                                            Soap</label>
+                                        <div class="YEsNoBtns YEsNoBtns1 flex">
+                                            <button class="btn bleedBtn shirnkageBtn">Yes</button>
+                                            <button class="btn bleedBtn shirnkageBtn activeBlueBtn">No</button>
+                                        </div>
+                                    </div>
+                                    <div class="maininfoInput14 alignsart justifyspacebtwn upperCase flex">
+                                        <label for=""
+                                            class="infoInputLabel1 robotoMedium labelTitle inputtitlePAding">Comments</label>
+                                        <textarea
+                                            class="infoInputTxt upperCase shrinkageTxtArea mb-1">Lorem Ipsum Defect Remarks ...</textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="colorBleed DyeableSection">
+                                <p class="heading robotoMedium upperCase">Dyeable</p>
+                                <div class="flex mainInfoInputS pb-2 robotoReguler">
+                                    <div class="flex">
+                                        <button class="btn DyeableBtn bleedBtn">Yes</button>
+                                        <button class="btn DyeableBtn bleedBtn activeBlueBtn">No</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ImageUpload section">
+                            <p class="heading robotoMedium upperCase">Image Upload</p>
+                            <div class="flex fullchooseBrowsFile mainInfoInputS robotoReguler">
+                                <div class="mainChoosebrowseFile flex">
+                                    <div class="maininfoInput12 TitleInputBox upperCase browsFile flex">
+                                        <svg viewBox="0 0 32 32" class="icon shapeCodepen browsFileIcon">
+                                            <use xlink:href="../SVG/sprite.svg#icon-folder"></use>
+                                        </svg>
+                                        <label class="custom-file-input filebrows">
+                                            <input type="file">
+
+                                        </label>
+                                        <p class="imgUitText">only .jpg or png format</p>
+                                    </div>
+                                    <div class="maininfoInput13 TitleInputBox upperCase chooseFils flex">
+                                        <svg viewBox="0 0 32 32" class="icon shapeCodepen chooseFileIcon">
+                                            <use xlink:href="../SVG/sprite.svg#icon-pictures"></use>
+                                        </svg>
+                                        <label class="custom-file-input fildrag">
+                                            <input type="file">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="imagePalce upperCase">Image</div>
+                                <div class="mainTitleSwatches flex">
+                                    <label class="addeddBy labelTitle robotoMedium inputtitlePAding">Added
+                                        by</label>
+                                    <div class="swatchesFullName flex">
+                                        <input type="text" placeholder="Full name"
+                                            class="gullNmaeInput transparent brdrNone">
+                                        <a href="#" class="addSwatchBtn btn">Add Swatch</a>
+                                    </div>
+                                </div>
+                                <div class="minSaveBtn flex">
+                                    <input type="submit" class="saveBtn upperCase blueBtn btn" value="NEXT" href="#">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

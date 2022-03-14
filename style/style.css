@@ -1,0 +1,1874 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "robotoMedium";
+  src: url(../RobotoFont/Roboto-Medium.ttf);
+}
+
+.robotoMedium {
+  font-family: "robotoMedium";
+}
+
+@font-face {
+  font-family: "robotoReguler";
+  src: url(../RobotoFont/Roboto-Regular.ttf);
+}
+
+.robotoReguler {
+  font-family: "robotoReguler";
+}
+
+.flex {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.txtCenter {
+  text-align: center;
+}
+
+.textRight {
+  text-align: right;
+}
+
+.upperCase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.whiteBack {
+  background: #fff;
+}
+
+.blueClr {
+  color: #4766ae;
+}
+
+.transparent {
+  background-color: transparent;
+}
+
+.brdrNone {
+  border: 0px;
+}
+
+.gullNmaeInput {
+  width: 65%;
+  padding: 5px;
+}
+
+.alignCenter{
+  align-items: center;
+}
+
+.addVendor {
+    width: 50%;
+    margin: 0 auto;
+    max-width: 350px;
+}
+
+/*========================== header css ==========================*/
+
+.BasicInfoPage {
+  background: #f0f2f7;
+  padding: 12px;
+}
+
+.header {
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  padding: 25px 12px;
+  background: #fff;
+  border-radius: 10px 10px 0 0;
+  line-height: 0.9;
+}
+
+.headerIcons {
+  width: calc(100% - 150px);
+  justify-content: flex-end;
+  background: #fcfdff;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.HeaderIcon {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  background: #fff;
+  position: relative;
+  display: block;
+  filter: drop-shadow(0px 17px 8px rgba(0, 0, 0, 0.11));
+  margin-right: 15px;
+}
+
+.HeaderUser {
+  background: #505050;
+  fill: #fff;
+  stroke: #fff;
+}
+
+.shapeCodepen {
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* basic info section  */
+
+.mainLeft {
+  width: 140px;
+  background-color: #fff;
+  border-radius: 0 0 10px 10px;
+}
+
+/*================================== side menu================================== */
+
+.SidemenuItem {
+  padding: 20px 0 20px 20px;
+  position: relative;
+  border-bottom: 1px solid #f8f8f8;
+}
+
+.SidemenuItem.activeMenuItem a {
+  color: #2d2d2d;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.SidemenuItem.activeMenuItem {
+  filter: drop-shadow(0px 10px 16px rgba(0, 0, 0, 0.07));
+  background-color: #ffffff;
+}
+
+.SidemenuItem.activeMenuItem:after, .SidemenuItem:hover:after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  content: "";
+  background-color: #4766ae;
+  width: 10px;
+  border-radius: 7px;
+}
+
+.SidemenuItem a {
+  color: #2c2c2c;
+  font-size: 14px;
+}
+
+.mainRight {
+  width: calc(100% - 150px);
+  background: #e9e9e9;
+  margin-left: 10px;
+  margin-top: 15px;
+  border-radius: 0 0 10px 10px;
+  position: relative;
+}
+
+.mainBasicInfoSection {
+  border-radius: 10px;
+  background: #fff;
+  height: calc(100vh - 167px);
+  overflow: auto;
+  position: relative;
+}
+
+.ImageUpload {
+  border-radius: 0 0 10px 10px;
+}
+
+/*-========================= besic info section-========================= */
+
+.lotNumber {
+  width: 35%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.totalQty {
+  width: 22%;
+}
+
+.totalQtyInput {
+  width: calc(100% - 82px);
+
+}
+.tabViewBtns {
+  padding: 10px;
+  justify-content: center;
+}
+.btn {
+  border-radius: 5px;
+  filter: drop-shadow(0px 6px 24.5px rgba(0, 0, 0, 0.09));
+  color: #757575;
+  padding: 10px 24px;
+  font-size: 14px;
+}
+
+
+.blueBtn {
+  background-color: #4766ae;
+  color: #fbfbfb;
+  transition: 0.2s;
+}
+
+.greenBtn {
+  background-color: #4BB543;
+  color: #fbfbfb;
+  transition: 0.2s;
+}
+
+.tabViewBtn {
+  margin: 0 6px;
+}
+
+/*==================== information==================== */
+
+.information {
+  border-radius: 10px 10px 0 0;
+}
+
+.section {
+  background: #f8f8f8;
+}
+
+.heading {
+  padding: 20px 20px 10px;
+  color: #434242;
+  font-size: 14px;
+}
+ .mainInfoInputS {
+  margin: 0px 20px 0 20px;
+  background-color: #fefefe;
+  padding: 15px 20px 0;
+  justify-content: space-between;
+  border-radius: 10px;
+  flex-wrap: wrap; 
+  }
+.TitleInputBox {
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.maininfoInput1, .maininfoInput4 {
+  width: 22%;
+}
+
+.maininfoInput2 {
+  width: 33%;
+}
+
+.maininfoInput3 {
+  width: 38%;
+}
+
+.maininfoInput5 {
+  width: 20%;
+}
+
+.maininfoInput6 {
+  width: 25%;
+  margin-right: 2%;
+}
+
+.maininfoInput7 {
+  width: 28%;
+}
+
+.maininfoInput7 {
+  width: 28%;
+}
+/*.labelTitle {
+  font-size: 13px;
+  color: #434242;
+}*/
+
+
+.labelTitle {
+    font-size: 13px;
+    color: #434242;
+    padding: 12px 0;
+}
+
+.infoInputTxt {
+  padding: 12px;
+  border-radius: 7px;
+  border: 1px solid #ececec;
+  align-items: center;
+  background-color: #fbfbfb;
+  font-size: 12px;
+}
+
+.infoInputTxt:focus {
+  outline: 0;
+  background-color: #fff;
+  border: 1px solid #aaa;
+}
+
+.infoInput1 {
+  width: calc(100% - 105px);
+}
+
+.infoInput2 {
+  width: calc(100% - 112px);
+}
+
+.infoInput3 {
+  width: calc(100% - 74px);
+}
+
+.infoInput4 {
+  width: calc(100% - 91px);
+}
+
+.infoInput5 {
+  width: calc(100% - 113px);
+}
+
+.infoInput6 {
+  width: calc(100% - 102px);
+  appearance: none;
+}
+
+.infoInput7 {
+  width: calc(100% - 128px);
+  appearance: none;
+}
+
+.infoInput8 {
+  width: calc(100% - 115px);
+}
+
+/* ==============================defects============================== */
+
+.maininfoInput9 {
+  width: 33%;
+}
+
+.maininfoInput10 {
+  width: 22%;
+}
+
+.maininfoInput11 {
+  width: 38%;
+}
+
+.infoInput9 {
+  width: calc(100% - 106px);
+}
+
+.infoInput10 {
+  width: calc(100% - 99px);
+}
+
+.infoInput11 {
+  width: calc(100% - 137px);
+}
+
+/*================================= shrinkage section================================= */
+
+.maininfoInput12 {
+  width: 27%;
+}
+
+.infoInput12 {
+  width: calc(50% - 76px);
+}
+
+.infoInputLabel13, .infoInputLabel12 {
+  margin-right: 15px;
+}
+
+.maininfoInput13 {
+  width: 27%;
+}
+
+.infoInput13 {
+  width: calc(50% - 72px);
+}
+
+.maininfoInput14 {
+  width: 38%;
+}
+
+.infoInput14 {
+  width: calc(100% - 97px);
+}
+
+.commenttxtarea{
+  max-width: calc(100% - 97px);
+  min-width: calc(100% - 97px);
+  min-height: 55px;
+  max-height: 55px;
+
+}
+
+/* ======================colorBleed section====================== */
+
+.browsFile, .chooseFils {
+  position: relative;
+}
+
+.YEsNoBtns {
+  width: calc(100% - 105px);
+}
+
+.YEsNoBtns1 {
+  width: calc(100% - 96px);
+}
+
+.bleedBtn {
+  width: 120px;
+  padding: 10px 0;
+  background: #f3f4f7;
+  text-align: center;
+  border-radius: 7px;
+  margin: 0 5px;
+  color: #2c2c2c;
+  filter: drop-shadow(0px 6px 24.5px rgba(0, 0, 0, 0.04));
+}
+
+.activeBlueBtn {
+  background: #4766ae;
+  color: #fff;
+}
+
+
+
+
+
+
+.completeWidth {
+  width: 100%;
+}
+/* =======================brows and choose file css =================== */
+
+.fullchooseBrowsFile {
+  background-color: transparent;
+  padding: 0 0 15px;
+}
+
+.mainChoosebrowseFile {
+  width: 35%;
+  align-items: flex-start;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 10px;
+  justify-content: space-between;
+  margin-right: 1%;
+}
+
+.browsFile {
+  border-radius: 7px;
+  width: 42%;
+  margin-bottom: 0;
+  flex-wrap: wrap;
+}
+
+.custom-file-input {
+  position: relative;
+  font-size: 12px;
+}
+
+.custom-file-input input {
+  visibility: hidden;
+  height: 0;
+  display: none;
+}
+
+.filebrows:before {
+  content: "Browse Folder";
+  display: block;
+  padding: 13px 0px 13px 40px;
+  color: #434242;
+}
+
+.filebrows {
+  background: #0000000a;
+  border-radius: 10px;
+  width: calc(100% - 20px);
+}
+
+.chooseFils {
+  border-radius: 10px;
+  background: #dfe0e5;
+  width: 55%;
+  margin-bottom: 0;
+}
+
+.chooseFileIcon {
+  height: 35px;
+  width: 35px;
+  left: 32px;
+  fill: #999;
+}
+
+.browsFileIcon {
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  top: 20px;
+}
+
+.imgUitText {
+  font-size: 11px;
+  margin: 3px 0;
+  color: #2c2c2c;
+}
+
+.fildrag {
+  padding: 15px 0 15px 60px;
+  position: relative;
+  height: auto;
+  font-size: 12px;
+  width: 95%;
+}
+
+.fildrag:before {
+  content: "or you can just  Drag and Drop Here...";
+  color: #2c2c2c;
+}
+
+/* ========================end choose and brows images======================== */
+
+.imagePalce {
+  color: #d1d1d1;
+  width: 10%;
+  max-width: 90px;
+  margin-right: 1%;
+  background: #fff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainTitleSwatches {
+  width: 38%;
+  background-color: #fff;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-right: 1%;
+}
+
+.swatchesFullName {
+  background: #f3f4f7;
+  padding: 10px;
+  width: 80%;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+.addSwatchBtn {
+  color: #fff;
+  width: 38%;
+}
+
+.minSaveBtn {
+    width: calc(22% - 31px);
+    align-items: flex-end;
+    z-index: 999;
+    justify-content: space-between;
+}
+
+.saveBtn {
+  align-items: flex-end;
+  justify-content: center;
+  display: flex;
+  padding: 15.5px;
+  cursor: pointer;
+  width: 100%;
+  border: 0;
+}
+
+/* ================================inventory Page================================ */
+
+.inventorySection {
+  background: #fefefe;
+  border-radius: 10px 10px 0 0;
+}
+/* ===================  febric qty ===================*/
+.inventoryDetails {
+    padding: 0px;
+    justify-content: flex-start;
+}
+.FebstoreQty {
+  width: 100%;
+  padding: 10px;
+  border-radius: 7px;
+}
+
+.febricInventoryTtlQty {
+  width: 25%;
+}
+
+.febricInventinput1 {
+  margin-left: 17px;
+}
+.febricInventoryinput {
+  width: 50%;
+  max-width: 100px;
+  border-radius: 7px 0 0 7px;
+}
+
+.febricInventoryselect {
+  border-radius: 0 7px 7px 0;
+}
+
+.QtyInput2 {
+  width: calc(100% - 61px);
+}
+.storeQty1, .storeQty2, .totalQty {
+  padding: 10px;
+  background: #f8f8f8;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mainRight ::placeholder {
+  color: #2c2c2c;
+}
+
+.storeQty1, .storeQty2 {
+  width: 36%;
+  margin-right: 2%;
+}
+
+.store1 {
+  width: 60%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.QtyInput1 {
+  width: calc(100% - 65px);
+}
+
+.QtyInput2 {
+  width: calc(100% - 61px);
+}
+
+.lotNumber {
+  width: 35%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.totalQty {
+  width: 22%;
+}
+
+.totalQtyInput {
+  width: calc(100% - 82px);
+}
+
+.mainReturn {
+  padding: 0 5px;
+}
+
+.returnQty {
+  width: 25%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.returnReason {
+  width: 45%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.returnreasonInput {
+  min-width: calc(100% - 120px);
+  max-width: calc(100% - 120px);
+  max-height: 54px;
+  min-height: 54px;
+  overflow-y: auto;
+}
+
+.returnQtyInput1 {
+  width: calc(100% - 93px);
+}
+
+.returnQtyInput2 {
+  width: calc(100% - 100px);
+}
+
+/* =====================finished sku section===================== */
+
+.mainFinishSKU {
+  padding: 10px 0;
+}
+
+.finishedSku {
+  max-width: 600px;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 5px;
+}
+
+.SkuInput {
+  margin-left: 15px;
+}
+
+.SkuInput2 {
+  margin-left: 10px;
+}
+
+.deleteSku, .addSku {
+  padding: 10px 20px;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  
+  border-radius: 7px;
+  left: 5px;
+}
+
+.deleteSkuIcon {
+  fill: #fff;
+  height: 24px;
+  width: 24px;
+}
+
+.addSku {
+  position: relative;
+  background: #fbfbfb;
+  border: 1px solid #ececec;
+  margin-left: 10px;
+}
+
+.inventorySection .SkuInput2::placeholder {
+  color: #696969;
+}
+/*======================== date year filter css======================== */
+/*code change*/
+.finished {
+    padding-bottom: 1rem;
+}
+.DateYEarfltr {
+  margin: 0px 20px 0;
+  padding: 0;
+}
+/*code change*/
+
+
+
+.DateYearFilter {
+  align-items: center;
+}
+
+.datYrFltrSlct {
+  appearance: none;
+  background: transparent url("../images/downArrow.svg") no-repeat 90% 10px;
+  background-size: 20px;
+  width: 10%;
+  border: 0;
+}
+
+.datYrFltrSlct:focus {
+  outline: 0;
+  border: 0;
+}
+
+.datYrFltrSlct2 {
+  background-color: #f6f6f6;
+}
+
+.filterDataIcon {
+  position: relative;
+  padding: 10px 18px;
+  background: #4766ae;
+  border-radius: 7px;
+  color: #fff;
+}
+
+.filterIcon {
+  left: 28px;
+  fill: #fff;
+}
+
+.filterBtnText {
+  padding-left: 20px;
+  font-size: 13px;
+}
+
+/* ============================================================================== */
+
+.dateInOutStrk {
+  margin-top: 15px;
+}
+
+.leftdateInOut {
+    width: 93%;
+    margin-top: 10px;
+    height: max-content;
+    overflow: overlay;
+    padding-right: 10px;
+    max-height: 420px;
+}
+
+.leftdateInOut::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px #fff;
+}
+
+.leftdateInOut::-webkit-scrollbar {
+  width: 5px;
+}
+
+.leftdateInOut::-webkit-scrollbar-thumb {
+  background-color: #ececec;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px #7e7e7e;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #a8a8a8;
+  border-radius: 10px;
+}
+
+.FullDateYear {
+  flex-wrap: wrap;
+  /*justify-content: space-between;*/
+  align-items: center;
+  background: #f8f8f8;
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.inptLbldateInOut1 {
+  justify-content: space-between;
+  align-items: center;
+  width: 20%;
+  margin-right: 2%;
+}
+
+.filterDate1 {
+  width: calc(100% - 60px);
+}
+
+.inptLbldateInOut2 {
+  justify-content: space-between;
+  align-items: center;
+  width: 10%;
+  margin-right: 2%;
+}
+
+.filterDate2 {
+  width: calc(100% - 18px);
+}
+
+.inptLbldateInOut3 {
+  justify-content: space-between;
+  align-items: center;
+  width: 17%;
+  margin-right: 2%;
+
+}
+
+.filterDate3 {
+  width: calc(100% - 32px);
+}
+
+
+
+
+
+/*code change*/
+.inptLbldateInOut4 {
+  justify-content: space-between;
+  align-items: center;
+  width: 23%;
+  margin-right: 2%;
+}
+/*code change*/
+
+.filterDate4 {
+  width: calc(100% - 75px);
+}
+
+.flex.inptLbldateInOut5 {
+  justify-content: space-between;
+  align-items: center;
+  width: 22%;
+}
+
+.filterDate5 {
+  width: calc(100% - 31px);
+}
+
+.inptLbldateInOut6 {
+  justify-content: space-between;
+  align-items: center;
+  width: 25%;
+  margin-right: 2%;
+
+}
+
+.filterDate6 {
+  width: calc(100% - 85px);
+}
+
+.inptLbldateInOut7 {
+  justify-content: space-between;
+  align-items: center;
+  width: 25%;
+  margin: 10px 2% 10px 0;
+}
+
+.filterDate7 {
+  width: calc(100% - 66px);
+}
+
+.inventorySaveBtn {
+  padding: 15px;
+  border-radius: 0 0 10px 10px;
+  justify-content: flex-end;
+  background-color: #fefefe;
+}
+.MainfebInMngmntBtn{
+  margin-left: auto;
+  align-items: center;
+}
+.febInMngmntBtn {
+    padding: .67rem;
+    max-width: 55px;
+    /*margin-left: auto;*/
+  }
+  i#show_data {
+    font-size: 2rem;
+}
+.editDateinout {
+  position: relative;
+  margin-left: 20px;
+  height: 40px;
+  width: 40px;
+  display: block;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+
+
+.blueIcon {
+  border: 1px solid #4766ae;
+}
+
+.EditIcon {
+  height: 20px;
+  width: 20px;
+}
+
+.BluIcn {
+  fill: #4766ae;
+}
+
+.addDateinout {
+  background: #f8f8f8;
+}
+
+.adddateInOutIcon {
+  fill: #434242;
+  height: 20px;
+  width: 20px;
+}
+
+/*============================================== Vendor page css============================================== */
+
+.VendorDeatil {
+  border-radius: 10px 10px 0 0;
+  background: #f8f8f8;
+}
+
+.VendorDetailSection {
+  padding: 10px 0 0;
+}
+
+.VEndorDetailLabelInput {
+  width: 50%;
+  padding: 15px;
+  align-items: center;
+}
+
+.vndrcontcteml, .vndrcontctno, .vndrcontctalt {
+  padding-bottom: 15px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.vndrcntctemlalt {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-bottom: 15px;
+}
+
+.vndrcontcteml {
+  width: 24%;
+  margin-right: 3%;
+}
+
+.vndrcontctno {
+  margin-right: 3%;
+  width: 22%;
+}
+
+.vndrcontctalt {
+  margin-right: 3%;
+  width: 18%;
+}
+
+.vndrcontctemlInput {
+  width: calc(100% - 53px);
+}
+
+.vndrcontctnoinput {
+  width: calc(100% - 95px);
+}
+
+.vndrcontctaltalt {
+  width: calc(100% - 47px);
+}
+
+.vndrcontctaddress {
+  width: 63%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vndrcontctaltaddress {
+  width: calc(100% - 71px);
+}
+
+.vndrcontctGSTIN {
+  width: 34%;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 3%;
+}
+
+.vndrcontctaltGSTIN {
+  width: calc(100% - 76px);
+}
+
+.vndrcontctprice {
+  align-items: center;
+  width: 35%;
+  padding: 10px 20px;
+}
+
+.PriceNoRups {
+  border: 1px solid #ececec;
+  align-items: center;
+  background-color: #fbfbfb;
+  border-radius: 10px;
+  padding: 0 10px 0 0;
+  width: calc(100% - 50px);
+  justify-content: space-between;
+}
+
+.vndrcontctaltprice {
+  border: 0;
+  background: transparent;
+}
+
+.priceCurrency {
+  font-size: 12px;
+  color: #2c2c2c;
+}
+
+/*======================== bill section ========================*/
+
+.vendorContact {
+  padding-bottom: 1px;
+}
+
+.mainBillsection {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin: 10px 20px;
+}
+
+.mainBillsection:last-child {
+  margin-bottom: 0;
+}
+
+.vndrcontctbill {
+  align-items: center;
+  /*justify-content: space-around;*/
+  width: 100%;
+}
+
+.vndrcontctaltbill {
+  width: calc(20% - 60px);
+}
+
+.vendrBillIcon {
+  position: relative;
+  border-radius: 7px;
+  border: 1px solid #ececec;
+  padding: 15px;
+}
+
+svg.icon.shapeCodepen.billaddIcon {
+  height: 20px;
+  width: 20px;
+  fill: #2c2c2c;
+}
+
+/* =============================vndrDebitnote section=================================== */
+
+.vndrDebitnote.robotoReguler.upperCase.flex {
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.mainDebitnoteInputs {
+  width: calc(50% - 67px);
+}
+
+/*=============================== passowrd popup=============================== */
+
+ .editinfo{
+  flex-wrap: wrap;
+ }
+.popupmsg {
+  background: #fff;
+  padding: 35px;
+  top: calc(50% + 50px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  position: fixed;
+  z-index: 99;
+  flex-direction: column;
+  width: 50%;
+  max-width: 550px;
+  border-radius: 10px;
+  filter: drop-shadow(0px 16px 13.5px rgba(0, 0, 0, 0.07));
+}
+
+.backBlur {
+  height: calc(100vh - 167px);
+  width: 100%;
+  position: absolute;
+  top: 57px;
+  left: 0;
+  border-radius: 10px;
+  background-image: url(../images/popupBack.png);
+}
+
+.passwordTitle {
+  font-size: 16px;
+}
+
+.passwordSaveBtn {
+  height: calc(100vh - 230px);
+}
+
+.passwordInput {
+  text-align-last: center;
+  margin: 30px 0;
+  padding: 15px;
+  font-size: 16px;
+}
+
+.passordTxt {
+  font-size: 15px;
+  color: #6980ba;
+}
+
+/* login screen */
+
+.loginScreen {
+  background-color: #f6f8fd;
+}
+
+.loinPageHeader {
+  filter: drop-shadow(0px 16px 13.5px rgba(0, 0, 0, 0.07));
+}
+
+.loinPageHeader .logo {
+  border-radius: 10px;
+}
+
+.loginForm {
+  width: calc(100% - 20px);
+  margin: 10px;
+  height: calc(100vh - 91px);
+  background: #fdfdfd;
+  border-radius: 10px;
+}
+
+.loginTitle {
+  color: #4766ae;
+  font-size: 25px;
+}
+
+.mainForm {
+  flex-direction: column;
+  max-width: 400px;
+  width: 100%;
+  position: absolute;
+  top: calc(50% + 20px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  filter: drop-shadow(0px 16px 13.5px rgba(0, 0, 0, 0.07));
+  border-top: 2px solid #4766ae;
+}
+
+.logOInInput {
+  width: 100%;
+  margin-top: 25px;
+  padding: 15px;
+  font-size: 16px;
+  text-align-last: center;
+  background: #fdfdfd;
+  ;
+}
+
+.logOInInput::placeholder {
+  color: #a8a8a8;
+}
+
+.loginBtn {
+  margin-top: 25px;
+  padding: 15px;
+  border-radius: 7px;
+  border: 0;
+  font-size: 16px;
+  width: 100%;
+}
+
+/* ================================add inventroy page================================ */
+
+/* icon=========================headericon========================= */
+
+.addFebRicHeader {
+  /*justify-content: space-between;*/
+  padding-left: 15px;
+}
+
+.hdrNxtPrwIco {
+  position: relative;
+}
+
+.hdrNxtPrwIco {
+  position: relative;
+  height: 40px;
+  width: 45px;
+  border-radius: 7px;
+  border: 1px solid #a6a6a7;
+  margin-right: 10px;
+}
+
+.headerarrow {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 30px;
+  width: 30px;
+  fill: #a6a6a7;
+}
+
+.activeArrowBtn {
+  background-color: #505050;
+  border: 1px solid #505050;
+}
+
+.activeArrowicon {
+  fill: #fff;
+}
+
+/* icon=========================end headericon========================= */
+
+.mainaddFebric {
+  background: #0000;
+}
+
+.addFebRicTopBtns {
+  padding: 10px;
+  background: #fff;
+  border-radius: 10px;
+  justify-content: space-between;
+}
+
+.addFebsearchBtn {
+  position: relative;
+}
+
+.flex.addFebricSrchtoggle {
+  width: 40%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.addFebsearchBtn {
+  position: relative;
+  width: 65%;
+}
+
+.febricSeach {
+  width: calc(100% - 40px);
+}
+
+.SearchBtn {
+  border: 0;
+  height: 40px;
+  background: #ededed;
+  position: absolute;
+  right: 2px;
+}
+
+.fbHdrIcn {
+  height: 30px;
+  border: 0;
+  cursor: pointer;
+  background: transparent;
+}
+
+.headSeachIcon, .downloadIcon, .uploadIcon {
+  fill: #4f4f4f;
+}
+
+.downloadBtn {
+  border-right: 1px solid #4f4f4f;
+  border-radius: 0;
+}
+
+.mainaddFebric ::placeholder {
+  color: #9f9f9f;
+}
+
+/*  ==================================addfabric table ================================== */
+
+.adminTable {
+  width: 100%;
+  margin: 0px;
+  position: relative;
+  border:1px solid #f1f1f1;
+  border-radius: 0 0 10px 10px;
+}
+
+.tableRaw {
+  table-layout: fixed;
+  width: 100%;
+  display: table;
+  background: #f4f3f3;
+  border: 1px solid #dedede;
+}
+
+.tblHeadRaw {
+  border-radius: 10px;
+  margin: 10px 0 0px;
+  /* box-shadow: 0px 2px 4px rgb(0 0 0 / 10%); */
+}
+
+.tblHeading {
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  font-weight: 500;
+  font-size: 14px;
+  color: #434242;
+}
+
+.tblHeading:first-child {
+  border-radius: 7px 0 0 7px;
+  width: 50px;
+}
+
+.tblHeading:nth-child(2) {
+  width: 70px;
+}
+
+/*.tblHeading:nth-child(7), .tblHeading:nth-child(8) {
+  width: 100px;
+}
+
+.tblHeading:nth-child(3) {
+  width: 100px;
+}
+.tblHeading:nth-child(4) {
+  width: 130px;
+}
+.tblHeading:nth-child(5) {
+  width: 120px;
+}
+.tblHeading:nth-child(9) {
+  width: 140px;
+}*/
+.tblHeading:last-child {
+  border-radius: 0 7px 7px 0;
+}
+
+.catTableBody {
+  height: calc(100vh - 229px);
+  overflow: auto;
+  display: block;
+}
+
+.catTable {
+  height: calc(100vh - 280px);
+  padding: 0;
+  margin: 20px 0 0;
+}
+
+.tableBdyRaw {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  border-radius: 8px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 0 5px;
+}
+
+.tblData {
+  border-right: 1px solid #e5e5e5;
+  padding: 8px 0 5px;
+  font-size: 13px;
+  color: #2c2c2c;
+}
+
+.blueText {
+  color: #4766ae;
+}
+
+.tblData:first-child {
+  width: 50px;
+}
+
+.tblData:nth-child(2) {
+  width: 70px;
+}
+
+/*.tblData:nth-child(3) {*/
+/*  width: 100px;*/
+/*}*/
+/*.tblData:nth-child(4) {*/
+/*  width: 130px;*/
+/*}*/
+/*.tblData:nth-child(5) {*/
+/*  width: 120px;*/
+/*}*/
+/*.tblData:nth-child(9) {*/
+/*  width: 140px;*/
+/*}*/
+
+/*.tblData:nth-child(7), .tblData:nth-child(8) {*/
+/*  width: 100px;*/
+/*}*/
+
+.tableImg {
+  width: calc(100% - 15px);
+  border-radius: 7px;
+}
+.tablecheckBox{
+  height: 16px;
+  width:16px;
+}
+
+
+
+.requiredMsg .infoInputTxt {
+    width: 100%;
+}
+
+#debitnote>input{
+  margin: 0 10px 10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+.BeadInfoTitleInput5 {
+    width: 20%;
+}
+.mb-2 {
+    margin-bottom: 1rem;
+}
+.justifyspacebtwn {
+    justify-content: space-between;
+}
+.BeadInfoinput5 {
+    width: calc(100% - 43px);
+}
+
+.requiredmsg {
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.BeadInfoinputtxt {
+    width: 45%;
+    max-width: 70px;
+    border-radius: 7px 0 0 7px;
+    border-right: 0;
+    min-height: 42px;
+    max-height: 42px;
+}
+.sizeqtySelect {
+    width: 55%;
+    max-width: 70px;
+    border-radius: 0 7px 7px 0;
+    min-height: 42px;
+    max-height: 42px;
+}
+
+label.BeadInfoTitle4.robotoMedium.labelTitle.inputtitlePAding {
+    padding: 12px 0;
+}
+
+
+
+
+.main_basic_info_5{
+      width: 20%;
+}
+.basic_info_5 {
+    width: calc(100% - 83px);
+}
+
+.main_basic_info_6 {
+    width: 25%;
+}
+
+
+.titlePadding{
+
+  padding: 12px 0;
+}
+.basic_info_6 {
+    width: calc(100% - 103px);
+}
+
+
+
+
+
+/*changes done*/
+select.infoInputTxt {
+    background: transparent url(../images/downArrow.svg) no-repeat 95% 7px;
+    appearance: none;
+}
+.completeWidth {
+  width: 100%;
+}
+.BasicInfoInformaiotn {
+    justify-content: flex-start;
+}
+.maininfoInput1 {
+    width: 23%;
+    margin-right: 2%;
+}
+.maininfoInput2 {
+    width: 30%;
+    margin-right: 2%;
+}
+
+.maininfoInput6 {
+    width: 25%;
+    margin-right: 2%;
+}
+.maininfoInput7 {
+    width: 30%;
+    margin-right: 2%;
+}
+.maininfoInput8 {
+    width: 25%;
+}
+.maininfoInput3 {
+    width: 43%;
+}
+.defectInventinput1{
+    width: calc(100% - 90px);
+}
+.defectQtyInput{
+      width: 55%;
+    border-radius: 7px 0 0 7px;
+    max-width: 70px;
+}
+.defectQtySelect{
+    width: 45%;
+    border-radius: 0 7px 7px 0;
+    max-width: 70px;
+}
+/*======================================= end table======================================= */
+
+/*  ==================================addfabric table ================================== */
+
+.adminTable {
+  width: 100%;
+  margin: 0px;
+  position: relative;
+  border: 1px solid #f1f1f1;
+  border-radius: 0 0 10px 10px;
+  padding: 0 10px 10px;
+  background: #fff;
+  border-top: 0;
+}
+
+.tableRaw {
+  table-layout: fixed;
+  width: 100%;
+  display: table;
+  background: #f4f3f3;
+  border: 1px solid #dedede;
+}
+
+.tblHeadRaw {
+  border-radius: 10px;
+  margin: 10px 0 0px;
+}
+
+.tblHeading {
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  font-weight: 500;
+  font-size: 14px;
+  color: #434242;
+}
+
+.tblHeading:first-child {
+  border-radius: 7px 0 0 7px;
+  width: 50px;
+}
+
+.tblHeading:nth-child(2) {
+  width: 70px;
+}
+
+/*.tblHeading:nth-child(7), .tblHeading:nth-child(8) {
+  width: 100px;
+}
+
+.tblHeading:nth-child(3) {
+  width: 100px;
+}
+
+.tblHeading:nth-child(4) {
+  width: 130px;
+}
+
+.tblHeading:nth-child(5) {
+  width: 120px;
+}
+
+.tblHeading:nth-child(9) {
+  width: 140px;
+}*/
+
+.tblHeading:last-child {
+  border-radius: 0 7px 7px 0;
+}
+
+.catTableBody {
+  height: calc(100vh - 229px);
+  overflow: auto;
+  display: block;
+}
+
+.catTable {
+  height: calc(100vh - 280px);
+  padding: 0;
+  margin: 20px 0 0;
+}
+
+.tableBdyRaw {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  border-radius: 8px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
+  padding: 0 5px;
+}
+
+.tblData {
+  border-right: 1px solid #e5e5e5;
+  padding: 8px 0 5px;
+  font-size: 13px;
+  color: #2c2c2c;
+}
+
+.blueText {
+  color: #4766ae;
+}
+
+.tblData:first-child {
+  width: 50px;
+}
+
+.tblData:nth-child(2) {
+  width: 70px;
+}
+
+/*.tblData:nth-child(3) {*/
+/*  width: 100px;*/
+/*}*/
+
+/*.tblData:nth-child(4) {*/
+/*  width: 130px;*/
+/*}*/
+
+/*.tblData:nth-child(5) {*/
+/*  width: 120px;*/
+/*}*/
+
+/*.tblData:nth-child(9) {*/
+/*  width: 140px;*/
+/*}*/
+
+/*.tblData:nth-child(7), .tblData:nth-child(8) {*/
+/*  width: 100px;*/
+/*}*/
+
+.tableImg {
+  width: calc(100% - 15px);
+  border-radius: 7px;
+}
+
+.tablecheckBox {
+  height: 16px;
+  width: 16px;
+}
+
+/*======================================= end table======================================= */
+
+/* ===========================add vendor page css ===========================*/
+
+.backgroundWhite {
+  background-color: #fff;
+}
+
+.addVendor {
+  width: 160px;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ===========================vendor List page=========================== */
+
+.VendorListBtn {
+  text-align: right;
+  width: 100%;
+}
+
+.vendorListcatTableBody {
+  height: calc(100vh - 283px);
+  overflow: auto;
+  display: block;
+}
+
+.NoMargin {
+  margin: 0;
+}
+
+.NoborderRadiusBootm {
+  border-radius: 10px 10px 0 0;
+}
+
+.VendorListtblHeading {
+  padding: 10px 15px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  text-align: left;
+  font-weight: 500;
+  font-size: 14px;
+  color: #434242;
+}
+
+.VendorListtblHeading:first-child, .VendorListtblData:first-child {
+  width: 80px;
+}
+
+.VendorListtblData {
+  border-right: 1px solid #e5e5e5;
+  padding: 15px;
+  font-size: 14px;
+  color: #2c2c2c;
+}
+
+
+
+
+
+
+.fullchooseBrowsFile .minSaveBtn {
+    width: 16%;
+}
+
+
+
+/* ===========================end vendor List page=========================== */
+/*  basic info page css updated */
+.swatchinfoFname{
+  padding: 0;
+}
+.fullNmebasciInfo {
+    width: 100%;
+    padding: 10px;
+}
+
+input.upperCase {
+    text-transform: none;
+}
